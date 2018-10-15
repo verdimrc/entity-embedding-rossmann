@@ -1,0 +1,6 @@
+Regression: target variables need not be strictly gaussian distribution. In this
+case, making it so (which in our case via box-cox) lower the performance.
+Instead, the original (and simpler) log normalization works better.
+
+Original vs holiday features: result not conclusive with just 1-fold. Need
+k-fold CV to gain more credible results.

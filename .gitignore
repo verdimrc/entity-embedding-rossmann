@@ -5,3 +5,4 @@
 store.csv
 test.csv
 train.csv
+*.parquet.gzip

@@ -1,0 +1,120 @@
+(mxnet_p36) ubuntu@ip-172-31-18-114:~/entity-embedding-rossmann$ /usr/bin/time ./my-train-test.py
+Using MXNet backend
+
+******************************
+features=ori, y_scaler=log_normal, output_activation=sigmoid
+******************************
+Loss function: mean_absolute_error
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created
+manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 16s 78us/step - loss: 0.0140 - val_loss: 0.0127
+Epoch 2/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0091 - val_loss: 0.0125
+Epoch 3/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0082 - val_loss: 0.0120
+Epoch 4/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0078 - val_loss: 0.0119
+Epoch 5/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0074 - val_loss: 0.0120
+Epoch 6/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0072 - val_loss: 0.0122
+Epoch 7/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0070 - val_loss: 0.0125
+Epoch 8/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0069 - val_loss: 0.0117
+Epoch 9/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0068 - val_loss: 0.0116
+Epoch 10/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0066 - val_loss: 0.0116
+
+******************************
+features=ori, y_scaler=box-cox, output_activation=sigmoid
+******************************
+Loss function: mean_absolute_error
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created
+manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0206 - val_loss: 0.0212
+Epoch 2/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0148 - val_loss: 0.0205
+Epoch 3/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0135 - val_loss: 0.0196
+Epoch 4/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0128 - val_loss: 0.0193
+Epoch 5/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0122 - val_loss: 0.0189
+Epoch 6/10
+200000/200000 [==============================] - 10s 51us/step - loss: 0.0119 - val_loss: 0.0188
+Epoch 7/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0116 - val_loss: 0.0185
+Epoch 8/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0114 - val_loss: 0.0183
+Epoch 9/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0111 - val_loss: 0.0184
+Epoch 10/10
+200000/200000 [==============================] - 10s 50us/step - loss: 0.0109 - val_loss: 0.0178
+
+******************************
+features=hol, y_scaler=log_normal, output_activation=sigmoid
+******************************
+Loss function: mean_absolute_error
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created
+manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 11s 56us/step - loss: 0.0142 - val_loss: 0.0127
+Epoch 2/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0092 - val_loss: 0.0121
+Epoch 3/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0083 - val_loss: 0.0120
+Epoch 4/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0078 - val_loss: 0.0117
+Epoch 5/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0075 - val_loss: 0.0110
+Epoch 6/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0072 - val_loss: 0.0110
+Epoch 7/10
+200000/200000 [==============================] - 11s 54us/step - loss: 0.0070 - val_loss: 0.0112
+Epoch 8/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0068 - val_loss: 0.0109
+Epoch 9/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0067 - val_loss: 0.0109
+Epoch 10/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0066 - val_loss: 0.0123
+
+******************************
+features=hol, y_scaler=box-cox, output_activation=sigmoid
+******************************
+Loss function: mean_absolute_error
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created
+manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0206 - val_loss: 0.0212
+Epoch 2/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0149 - val_loss: 0.0204
+Epoch 3/10
+200000/200000 [==============================] - 11s 56us/step - loss: 0.0136 - val_loss: 0.0193
+Epoch 4/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0127 - val_loss: 0.0187
+Epoch 5/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0122 - val_loss: 0.0188
+Epoch 6/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0119 - val_loss: 0.0185
+Epoch 7/10
+200000/200000 [==============================] - 11s 54us/step - loss: 0.0116 - val_loss: 0.0189
+Epoch 8/10
+200000/200000 [==============================] - 11s 54us/step - loss: 0.0114 - val_loss: 0.0184
+Epoch 9/10
+200000/200000 [==============================] - 11s 56us/step - loss: 0.0111 - val_loss: 0.0182
+Epoch 10/10
+200000/200000 [==============================] - 11s 55us/step - loss: 0.0109 - val_loss: 0.0183
+625.87user 85.62system 7:18.65elapsed 162%CPU (0avgtext+0avgdata 2714312maxresident)k
+1047256inputs+0outputs (3264major+1016777minor)pagefaults 0swaps

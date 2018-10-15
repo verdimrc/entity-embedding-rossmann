@@ -1,0 +1,131 @@
+(mxnet_p36) ubuntu@ip-172-31-18-114:~/entity-embedding-rossmann$ /usr/bin/time python3 train_test_model.py 
+Using MXNet backend
+Number of samples used for training: 200000
+Fitting NN_with_EntityEmbedding...
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 91s 453us/step - loss: 0.0142 - val_loss: 0.0116
+Epoch 2/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0094 - val_loss: 0.0118
+Epoch 3/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0087 - val_loss: 0.0106
+Epoch 4/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0081 - val_loss: 0.0106
+Epoch 5/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0077 - val_loss: 0.0106
+Epoch 6/10
+200000/200000 [==============================] - 9s 46us/step - loss: 0.0074 - val_loss: 0.0106
+Epoch 7/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0072 - val_loss: 0.0096
+Epoch 8/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0071 - val_loss: 0.0102
+Epoch 9/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0069 - val_loss: 0.0097
+Epoch 10/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0068 - val_loss: 0.0097
+Result on validation data:  0.102246975427
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0141 - val_loss: 0.0116
+Epoch 2/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0095 - val_loss: 0.0110
+Epoch 3/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0086 - val_loss: 0.0118
+Epoch 4/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0080 - val_loss: 0.0111
+Epoch 5/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0077 - val_loss: 0.0113
+Epoch 6/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0075 - val_loss: 0.0131
+Epoch 7/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0073 - val_loss: 0.0102
+Epoch 8/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0071 - val_loss: 0.0100
+Epoch 9/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0070 - val_loss: 0.0100
+Epoch 10/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0069 - val_loss: 0.0106
+Result on validation data:  0.120375970499
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0140 - val_loss: 0.0121
+Epoch 2/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0094 - val_loss: 0.0102
+Epoch 3/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0085 - val_loss: 0.0099
+Epoch 4/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0080 - val_loss: 0.0109
+Epoch 5/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0077 - val_loss: 0.0105
+Epoch 6/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0075 - val_loss: 0.0108
+Epoch 7/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0073 - val_loss: 0.0102
+Epoch 8/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0071 - val_loss: 0.0105
+Epoch 9/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0070 - val_loss: 0.0104
+Epoch 10/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0069 - val_loss: 0.0099
+Result on validation data:  0.107893957718
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0140 - val_loss: 0.0117
+Epoch 2/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0095 - val_loss: 0.0113
+Epoch 3/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0086 - val_loss: 0.0106
+Epoch 4/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0080 - val_loss: 0.0106
+Epoch 5/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0077 - val_loss: 0.0104
+Epoch 6/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0074 - val_loss: 0.0106
+Epoch 7/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0073 - val_loss: 0.0101
+Epoch 8/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0071 - val_loss: 0.0105
+Epoch 9/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0070 - val_loss: 0.0107
+Epoch 10/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0069 - val_loss: 0.0103
+Result on validation data:  0.111262950105
+Train on 200000 samples, validate on 84434 samples
+Epoch 1/10
+/home/ubuntu/anaconda3/envs/mxnet_p36/lib/python3.6/site-packages/mxnet/module/bucketing_module.py:408: UserWarning: Optimizer created manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.0078125). Is this intended?
+  force_init=force_init)
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0139 - val_loss: 0.0117
+Epoch 2/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0095 - val_loss: 0.0111
+Epoch 3/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0087 - val_loss: 0.0105
+Epoch 4/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0080 - val_loss: 0.0101
+Epoch 5/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0077 - val_loss: 0.0098
+Epoch 6/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0074 - val_loss: 0.0097
+Epoch 7/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0072 - val_loss: 0.0100
+Epoch 8/10
+200000/200000 [==============================] - 10s 48us/step - loss: 0.0071 - val_loss: 0.0095
+Epoch 9/10
+200000/200000 [==============================] - 10s 49us/step - loss: 0.0069 - val_loss: 0.0096
+Epoch 10/10
+200000/200000 [==============================] - 9s 47us/step - loss: 0.0068 - val_loss: 0.0093
+Result on validation data:  0.100030699436
+Evaluate combined models...
+Training error...
+0.064162976005
+Validation error...
+0.0992883928186
+857.30user 114.68system 11:39.62elapsed 138%CPU (0avgtext+0avgdata 2287264maxresident)k
+640960inputs+8064outputs (2077major+463342minor)pagefaults 0swaps
